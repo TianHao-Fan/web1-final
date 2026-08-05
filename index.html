@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web1-Final</title>
+</head>
+<body>
+    <div class="container">
+         <!--I used a list for the navigation because it contains a group of links.
+         The logo, navigation links, and search bar are in the same section.
+         Later, I will use CSS to change their positions for mobile and desktop screens.-->
+        <nav>
+            <!-- AI prompt: Inside the container, add a nav, header, main, and footer. 
+            Inside each one, add a div with the class "limit".
+            Inside the nav limit div, add a div with the class "logo" containing the logo image 
+            from images/logo.png. 
+            After the logo, add a ul with five list items. Each list item should contain a link: 
+            Home, About Us, Services, Team, and Contact. Use #home, #about, #services, #team, 
+            and #contact for the links.
+            After the navigation list, add a search form with a label, a search input, 
+            and a submit button.-->
+            <div class="limit">
+                <div class="logo">
+                    <img src="images/logo.png" alt="three star media logo">
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <form action="#" method="get">
+                    <label for="search">Search</label>
+                    <input type="search" id="search" name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- I put the main image, heading, paragraph, and button together in the header.
+        This is the first main content users will see on the page.
+        Later, I will use CSS to place the text and button over the image 
+        for both mobile and desktop screens. -->
+        <header id="home">
+            <div class="limit">
+                <div class="main-banner">
+                    <img src="images/main-banner.jpg" alt="three star media office">
+                    <article>
+                        <h1>Welcome to Three Star Media</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Magnam rerum voluptas nesciunt quam nostrum
+                            similique nihil laboriosam provident neque.
+                        </p>
+                    </article>
+                     <div class="btn">
+                    <a href="#contact">Connect with us</a>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <main>
+            <div id="about" class="limit">
+                <!-- I put the image and text together in the About Us section 
+                 because they are related content.
+                I used an article for the heading and paragraphs to keep the text together.
+                Later, I will use CSS to place the image and text side by side 
+                on desktop and stack them on mobile.-->
+                <div class="about-us">
+                    <img src="images/about-us.jpg" alt="Table tennis">
+                    <article>
+                        <h2>About Us</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                        </p>
+                    </article>
+                </div>
+                <section id="services" class="our-services">
+                    <h2>Our Services</h2>
+                    <!-- I put all five services in the same section 
+                    because they have similar content.
+                    I used the same card class for each service 
+                    so they can share the same style.
+                    Later, I will use CSS Grid to show the cards in one column 
+                    on mobile and different columns on desktop.-->
+                    <div class="cards">
+                         <article class="card">
+                            <img src="images/digital.jpg" alt="Person using a laptop and phone">
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                            <div class="btn">
+                                <a href="#contact">Digital Plans</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="images/marketing.jpg" alt="A laptop">
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                            <div class="btn">
+                                <a href="#contact">Marketing Plans</a>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="images/video.jpg" alt="Youtube on the phone">
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                            <div class="btn">
+                                <a href="#contact">Video Plans</a>
+                            </div>
+                        </article>
+                         <article class="card">
+                            <img src="images/web.jpg" alt="phone and pen">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                            <div class="btn">
+                                <a href="#contact">Web Plans</a>
+                            </div>
+                        </article>
+                         <article class="card">
+                            <img src="images/print.jpg" alt="Many different mailboxes">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                            <div class="btn">
+                                <a href="#contact">Print Plans</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- I put the vision image, text, and button in the same section 
+                because they belong together. Later, I will use CSS to place the 
+                text and button over the image to match the mockup.
+                The same HTML structure will be used for both mobile and desktop. -->
+                <section class="our-vision">
+                    <img src="images/vision.jpg" alt="five boats">
+                    <h2>Our Vision</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                       adipiscing elit.</p>
+                    <div class="btn">
+                         <a href="#contact">Learn More</a>
+                    </div>
+                </section>
+                 <!-- I used the same team-member class for both members 
+                 because they have the same type of content.
+                 Each member has an image, name, job title, and paragraph.
+                 Later, I will use CSS to change the positions of the images 
+                 and text for mobile and desktop. -->
+                <section id="team" class="our-team">
+                    <h2>Our Team</h2>
+                    <div class="team-members">
+                        <article class="team-member">
+                            <img src="images/john.jpg" alt="a CEO and a Co-owner">
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                               adipiscing elit.</p>
+                        </article>
+                         <article class="team-member">
+                            <img src="images/bob.jpg" alt="a CEO and a Co-owner">
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                               adipiscing elit.</p>
+                        </article>
+                    </div>
+                </section>
+                <!-- I separated the contact information into a form, business hours, 
+                and location because they have different purposes.
+                I used labels for the form inputs so users can understand what information 
+                they need to enter.
+                Later, I will use CSS Grid to arrange these parts 
+                for desktop and stack them on mobile. -->
+                <section id="contact" class="contact-us">
+                    <h2>Contact Us</h2>
+                     <div class="contact-content">
+                        <section class="contact-form">
+                            <h3>Send us a message</h3>
+                            <form action="#" method="post">
+                                <div class="form-field">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" id="fullname" name="fullname">
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email">  
+                                </div>
+
+                            <div class="form-field">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"></textarea>   
+                            </div>
+                                <button type="submit">Send</button>
+                            </form>
+                        </section>  
+                    </div>
+                </section>
+                <!-- I used a table for the business hours because 
+                it clearly shows the days and opening hours.
+                The rows make the information easy to read.
+                Later, I will use CSS to change the table colours, 
+                borders, and spacing to match the mockup. -->
+                <section class="hours">
+                    <h3>Hours of operation</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="location">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9488705579806!2d-75.75881522384624!3d45.349844371072315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1785333443041!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="limit">
+            <p>
+                &copy; Copyright Three Star Media, 2020
+            </p>
+            <p>
+                All images are taken from <a href="https://unsplash.com/">Unsplash</a>
+            </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>       
+                
+        
